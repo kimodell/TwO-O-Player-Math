@@ -22,7 +22,7 @@ class Turn
     if @question.validate_answer(answer)
       puts "#{player.name}: YES! That is correct!"
     else
-      puts "#{player.name}: Sorry, that is incorrect!"
+      puts "#{player.name}: N00b! Sorry, that is incorrect!"
       player.lose_life
     end
   end

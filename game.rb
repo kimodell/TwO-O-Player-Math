@@ -44,6 +44,7 @@ class Game
     # Determine the winner based on which player is still alive
     winner = @player1.alive ? @player1 : @player2
     loser = @player1.alive ? @player2 : @player1
-    puts "Winner, winner, chicken dinner! #{winner.name} wins with a score of #{winner.lives} / #{loser.lives}"
+    puts "---- GAME OVER ----"
+    puts "Winner, winner, chicken dinner! #{winner.name} wins with a score of #{winner.lives}/#{loser.lives}"
   end
 end  
